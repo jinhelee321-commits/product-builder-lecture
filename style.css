@@ -76,3 +76,63 @@ h1 {
 #generator-btn:hover {
     background-color: #45a049;
 }
+
+.divider {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+body.dark-theme .divider {
+    border-top-color: #444;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+body.dark-theme .form-group input,
+body.dark-theme .form-group textarea {
+    border-color: #444;
+}
+
+#submit-btn {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+body.dark-theme #submit-btn {
+    background-color: #444;
+}
+
+#submit-btn:hover {
+    opacity: 0.8;
+}
