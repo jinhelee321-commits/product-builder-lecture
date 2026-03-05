@@ -1,8 +1,18 @@
 :root {
     --background-color: #f0f0f0;
-    --main-color: #333;
+    --container-bg: #fff;
+    --text-color: #333;
     --accent-color: #4CAF50;
     --white-color: #fff;
+    --ball-bg: #f1c40f;
+}
+
+body.dark-theme {
+    --background-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent-color: #81c784;
+    --ball-bg: #d4ac0d;
 }
 
 body {
@@ -12,19 +22,36 @@ body {
     align-items: center;
     height: 100vh;
     background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
+    position: relative;
     text-align: center;
-    background-color: var(--white-color);
-    padding: 2rem;
+    background-color: var(--container-bg);
+    padding: 3rem 2rem 2rem;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
 }
 
 h1 {
-    color: var(--main-color);
+    color: var(--text-color);
     margin-bottom: 1.5rem;
 }
 
